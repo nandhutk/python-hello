@@ -6,6 +6,6 @@ metadata:
 spec:
  type: NodePort
  ports:
- — port: 4025
+   — port: 4025
  selector:
    app: hello-py
