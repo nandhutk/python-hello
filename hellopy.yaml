@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: your-app
+  name: hello-py
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: your-app
+      app: hello-py
   template:
     metadata:
       labels:
-        app: your-app
+        app: hello-py
     spec:
       containers:
-      - name: your-app
+      - name: hello-py
         image: nandhutk/hellopy
         ports:
         - containerPort: 5000
